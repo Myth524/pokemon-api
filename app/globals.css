@@ -26,6 +26,77 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.game__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: black; 
+}
+
+.whos__that_pokemon_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 25rem;
+  height: 35rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  background: #FFFFFF;
+  box-shadow: 0px 3.35725px 16.7862px 4.19656px rgba(255, 214, 0, 0.39);
+  border-radius: 10.0717px;
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s both;
+  animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s both;
+}
+
+.whos__that_pokemon_card .wtp__logo {
+  width: 12rem;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.whos__that_pokemon_card .pokemon__img {
+  width: 20rem;
+  height: 20rem;
+  margin-bottom: 3rem;
+  filter: brightness(0);
+  transition: all 0.7s ease-in-out;
+}
+
+.whos__that_pokemon_card .pokemon__img.show {
+  filter: brightness(100%);
+}
+
+.whos_pokemon_details {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 35rem;
+  margin-top: 2rem;
+}
+
+.options__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.options__container button {
+  margin: 5px;
+  padding: 10px 10px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.options__container button:hover {
+  background-color: yellow;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
