@@ -1,11 +1,11 @@
 import PokemonGame from "@/components/pokemon-game";
 
-export default async function Home() {
+export default async function home() {
   return (
     <>
-      <div className="game__container">
+      <div className="game_container">
         <PokemonGame/>
       </div>
     </>
-  );
+  )
 }
